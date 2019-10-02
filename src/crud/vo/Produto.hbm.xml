@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="crud.vo.Produto" table="produto">
+        <id name="idProduto" column="id_produto" type="integer" unsaved-value="null">
+            <generator class="native"/>
+        </id>
+        <property name="nomeProduto" column="nome_produto" type="string" />
+        <property name="precoProduto" column="preco_produto" type="string" />
+        <property name="quantidadeProduto" column="quantidade_produto" type="integer" />
+    </class>
+</hibernate-mapping>
